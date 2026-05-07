@@ -1,3 +1,5 @@
+/* ------------ RESET & GLOBAL STYLES -------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #111;
-  background-color: #eaeded;
+ background-color: white;
   border-radius: 3px;
   border: 1px solid;
 }
@@ -46,7 +48,8 @@ header {
   width: 100%;
 }
 
-/* Top header */
+/* ------------ TOP HEADER -------------- */
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -58,12 +61,30 @@ header {
   gap: 12px;
 }
 
+/* ------------ LOGO -------------- */
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* ------------ SEARCH SECTION -------------- */
+
 .search-section {
   display: flex;
   flex-grow: 1;
   min-width: 250px;
   height: 38px;
-
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -74,25 +95,27 @@ header {
   padding-left: 8px;
   padding-right: 8px;
   cursor: pointer;
-  width: 15%;
+
+  max-width: 50px;
 }
 
 .search-catag {
   width: 10%;
 }
+
 .search-catag ul {
   min-width: 100px;
   height: 100px;
 }
+
 .search-catag li {
   height: 100px;
 }
 
+
 .search-bar {
   display: flex;
   flex: 1;
-  max-width: 600px;
-  margin: 0 px;
 }
 
 .search-bar input {
@@ -103,12 +126,14 @@ header {
 }
 
 .search-bar button {
-  padding: 8px 12px;
+
   background-color: #febd69;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
 }
+
+/* ------------ COUNTRY SECTION -------------- */
 
 .country {
   font-size: 12px;
@@ -124,7 +149,28 @@ header {
   font-weight: bold;
 }
 
-/* Bottom header */
+/* ------------ NAVIGATION LINKS -------------- */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-links a p{
+  font-weight: 500;
+  display: block;
+}
+
+/* ------------ BOTTOM HEADER -------------- */
+
 .header-bottom {
   display: flex;
   align-items: center;
@@ -144,26 +190,7 @@ header {
   text-decoration: underline;
 }
 
-/* Logo */
-.logo {
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-/* Nav links (right side) */
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-  font-size: 14px;
-}
+/* ------------ BREADCRUMB -------------- */
 
 .breadcrumb {
   background-color: white;
@@ -179,7 +206,8 @@ header {
   font-size: 12px;
 }
 
-/* --------- MAIN --------- */
+/* ------------ MAIN LAYOUT -------------- */
+
 .main {
   display: flex;
   flex-direction: column;
@@ -191,7 +219,8 @@ header {
   gap: 20px;
 }
 
-/*---------- Product Section------- */
+/* ------------ PRODUCT SECTION -------------- */
+
 .product {
   display: flex;
   flex-wrap: wrap;
@@ -203,7 +232,8 @@ header {
   gap: 20px;
 }
 
-/* ------Gallery-section----- */
+/* ------------ GALLERY SECTION -------------- */
+
 .gallery {
   flex: 1;
   min-width: 280px;
@@ -222,11 +252,13 @@ header {
   flex-grow: 1;
   flex-shrink: 1;
 }
+
 .options {
   display: flex;
   gap: 8px;
   font-weight: 540;
 }
+
 .options li {
   width: 56px;
   height: 80px;
@@ -260,7 +292,8 @@ header {
   max-height: 500px;
   object-fit: contain;
 }
-/* --------------------- */
+
+/* ------------ PRODUCT DETAILS -------------- */
 
 .product-details {
   flex-grow: 2;
@@ -329,6 +362,8 @@ header {
   font-size: 13px;
 }
 
+/* ------------ BUY BOX -------------- */
+
 .buybox {
   flex: 1;
   min-width: 240px;
@@ -342,6 +377,7 @@ header {
   font-size: 16px;
   color: #b12704;
 }
+
 .buybox-price .whole {
   font-size: 28px;
   font-weight: bold;
@@ -370,6 +406,9 @@ header {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* ------------ BUTTONS -------------- */
+
 button {
   background-color: #ffd814;
   border: 1px solid #fcd200;
@@ -398,6 +437,8 @@ button:hover {
   margin-top: 10px;
 }
 
+/* ------------ BUY BOX DETAILS -------------- */
+
 .buybox-detalis {
   margin-top: 12px;
   font-size: 13px;
@@ -410,6 +451,8 @@ button:hover {
 .buybox-detalis li {
   padding: 2px;
 }
+
+/* ------------ RELATED PRODUCTS -------------- */
 
 .related {
   margin-top: 30px;
@@ -434,6 +477,9 @@ button:hover {
   font-size: 16px;
   font-weight: bold;
 }
+
+/* ------------ CAROUSEL -------------- */
+
 .carousel {
   position: relative;
   display: flex;
@@ -441,6 +487,7 @@ button:hover {
   padding-right: 45px;
   padding-left: 45px;
 }
+
 .carousel-track {
   display: flex;
   gap: 12px;
@@ -467,6 +514,9 @@ button:hover {
   object-fit: contain;
   margin-bottom: 8px;
 }
+
+/* ------------ CAROUSEL NAVIGATION -------------- */
+
 .nav {
   position: absolute;
   top: 50%;
@@ -503,7 +553,8 @@ button:hover {
   background: #f7f7f7;
 }
 
-/* ------------REVIEWS---------- */
+/* ------------ REVIEWS -------------- */
+
 .reviews {
   margin-top: 30px;
   padding-top: 16px;
@@ -578,7 +629,8 @@ button:hover {
   margin-bottom: 6px;
 }
 
-/*------ FOOTER -------- */
+/* ------------ FOOTER -------------- */
+
 .footer {
   margin-top: 30px;
   text-align: center;
